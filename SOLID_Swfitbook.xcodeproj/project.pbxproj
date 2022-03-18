@@ -15,6 +15,13 @@
 		E8A4563D27E4BF7200139A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A4563B27E4BF7200139A7F /* LaunchScreen.storyboard */; };
 		E8A4564627E4CC2400139A7F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4564527E4CC2400139A7F /* NetworkService.swift */; };
 		E8A4564827E4CD2E00139A7F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4564727E4CD2E00139A7F /* DataStore.swift */; };
+		E8A4564B27E4D63300139A7F /* OpenClosedPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4564A27E4D63300139A7F /* OpenClosedPrinciple.swift */; };
+		E8A4564D27E4D67300139A7F /* NetworkService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4564C27E4D67300139A7F /* NetworkService2.swift */; };
+		E8A4564F27E4D69E00139A7F /* DataStore2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4564E27E4D69E00139A7F /* DataStore2.swift */; };
+		E8A4565127E4D72D00139A7F /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4565027E4D72D00139A7F /* CountryModel.swift */; };
+		E8A4565327E4D76700139A7F /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4565227E4D76700139A7F /* NetworkDataFetcher.swift */; };
+		E8A4565727E4FA1C00139A7F /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4565627E4FA1C00139A7F /* AppGroup.swift */; };
+		E8A4565927E5072200139A7F /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4565827E5072200139A7F /* DataFetcherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		E8A4563E27E4BF7200139A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8A4564527E4CC2400139A7F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E8A4564727E4CD2E00139A7F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		E8A4564A27E4D63300139A7F /* OpenClosedPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClosedPrinciple.swift; sourceTree = "<group>"; };
+		E8A4564C27E4D67300139A7F /* NetworkService2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService2.swift; sourceTree = "<group>"; };
+		E8A4564E27E4D69E00139A7F /* DataStore2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore2.swift; sourceTree = "<group>"; };
+		E8A4565027E4D72D00139A7F /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		E8A4565227E4D76700139A7F /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		E8A4565627E4FA1C00139A7F /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		E8A4565827E5072200139A7F /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			children = (
 				E8A4563027E4BF7000139A7F /* AppDelegate.swift */,
 				E8A4563227E4BF7000139A7F /* SceneDelegate.swift */,
+				E8A4564927E4D5EB00139A7F /* OpenClosedPrinciple */,
 				E8A4564427E4C14500139A7F /* SingleResponsibilityPrinciple */,
 				E8A4563627E4BF7000139A7F /* Main.storyboard */,
 				E8A4563927E4BF7200139A7F /* Assets.xcassets */,
@@ -79,6 +94,36 @@
 				E8A4564727E4CD2E00139A7F /* DataStore.swift */,
 			);
 			path = SingleResponsibilityPrinciple;
+			sourceTree = "<group>";
+		};
+		E8A4564927E4D5EB00139A7F /* OpenClosedPrinciple */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4564A27E4D63300139A7F /* OpenClosedPrinciple.swift */,
+				E8A4565427E4D8D400139A7F /* Services */,
+			);
+			path = OpenClosedPrinciple;
+			sourceTree = "<group>";
+		};
+		E8A4565427E4D8D400139A7F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4565527E4D8EC00139A7F /* Models */,
+				E8A4564C27E4D67300139A7F /* NetworkService2.swift */,
+				E8A4564E27E4D69E00139A7F /* DataStore2.swift */,
+				E8A4565227E4D76700139A7F /* NetworkDataFetcher.swift */,
+				E8A4565827E5072200139A7F /* DataFetcherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E8A4565527E4D8EC00139A7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4565027E4D72D00139A7F /* CountryModel.swift */,
+				E8A4565627E4FA1C00139A7F /* AppGroup.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,11 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A4565727E4FA1C00139A7F /* AppGroup.swift in Sources */,
 				E8A4563527E4BF7000139A7F /* SingleResponsibilityPrinciple.swift in Sources */,
+				E8A4564F27E4D69E00139A7F /* DataStore2.swift in Sources */,
+				E8A4565127E4D72D00139A7F /* CountryModel.swift in Sources */,
 				E8A4563127E4BF7000139A7F /* AppDelegate.swift in Sources */,
+				E8A4565327E4D76700139A7F /* NetworkDataFetcher.swift in Sources */,
 				E8A4564627E4CC2400139A7F /* NetworkService.swift in Sources */,
 				E8A4564827E4CD2E00139A7F /* DataStore.swift in Sources */,
+				E8A4564B27E4D63300139A7F /* OpenClosedPrinciple.swift in Sources */,
 				E8A4563327E4BF7000139A7F /* SceneDelegate.swift in Sources */,
+				E8A4564D27E4D67300139A7F /* NetworkService2.swift in Sources */,
+				E8A4565927E5072200139A7F /* DataFetcherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

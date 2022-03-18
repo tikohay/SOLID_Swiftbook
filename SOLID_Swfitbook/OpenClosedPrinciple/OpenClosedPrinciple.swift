@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OpenClosedPrinciple.swift
 //  SOLID_Swfitbook
 //
 //  Created by Karakhanyan Tigran on 18.03.2022.
@@ -7,12 +7,11 @@
 
 import UIKit
 
-class SingleResponsibilityPrinciple: UIViewController {
-
-    let urlString = "https://raw.githubusercontent.com/Softex-Group/task-mobile/master/test.json"
+class OpenClosedPrinciple: UIViewController {
     
-    var networkServie = NetworkService()
-    var dataStore = DataStore()
+//    var networkServie = NetworkService2()
+    var dataFetcherService = DataFetcherService()
+    var dataStore = DataStore2()
     
     @IBOutlet weak var myTextField: UITextField!
     @IBOutlet weak var textLabel: UILabel!
@@ -22,7 +21,21 @@ class SingleResponsibilityPrinciple: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        networkServie.dataFetcher(urlString: urlString)
+//        networkDataFetcher.fetchCountry(urlString: countryUrlString) { countries in
+//            print(countries?.first?.Name)
+//        }
+        
+//        networkDataFetcher.fetchGames(urlString: appsUrlString) { apps in
+//            print(apps)
+//        }
+        
+        dataFetcherService.fetchCountry { countries in
+            print(countries?.first?.Name)
+        }
+        
+        dataFetcherService.fetchGames { game in
+            print(game?.feed.results.first?.name)
+        }
     }
     
     func changeName() {
@@ -47,4 +60,3 @@ class SingleResponsibilityPrinciple: UIViewController {
         changeName()
     }
 }
-

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Single Responsibility Principle-->
+        <!--Open Closed Principle-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SingleResponsibilityPrinciple" customModule="SOLID_Swfitbook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OpenClosedPrinciple" customModule="SOLID_Swfitbook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="changeLabel:" destination="BYZ-38-t0r" eventType="editingChanged" id="tRv-2v-ee0"/>
+                                    <action selector="changeLabel:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="udm-V0-CLI"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAw-Lm-dLG">
@@ -38,7 +38,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="SAVE"/>
                                 <connections>
-                                    <action selector="sabeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69r-9s-j45"/>
+                                    <action selector="sabeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D0B-1K-Bi0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zst-Q5-PtS">
@@ -62,9 +62,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myTextField" destination="2Ot-wd-5lI" id="Evn-Pp-o9M"/>
-                        <outlet property="saveButton" destination="TAw-Lm-dLG" id="ejC-S1-6O6"/>
-                        <outlet property="textLabel" destination="zst-Q5-PtS" id="6hp-IR-Aye"/>
+                        <outlet property="myTextField" destination="2Ot-wd-5lI" id="GTg-9k-Zh8"/>
+                        <outlet property="saveButton" destination="TAw-Lm-dLG" id="eI9-po-HBT"/>
+                        <outlet property="textLabel" destination="zst-Q5-PtS" id="bl3-L8-nrY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
