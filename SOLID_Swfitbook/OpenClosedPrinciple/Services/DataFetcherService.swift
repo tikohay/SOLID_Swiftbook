@@ -9,19 +9,26 @@ import Foundation
 
 class DataFetcherService {
     
-    var dataFetcher: DataFetcher!
+    var networkDataFetcher: DataFetcher
+    var localDataFetcher: DataFetcher
     
-    init(dataFetcher: DataFetcher = NetworkDataFetcher()) {
-        self.dataFetcher = dataFetcher
+    init(dataFetcher: DataFetcher = NetworkDataFetcher(), localDataFetcher: DataFetcher = LocalDataFetcher()) {
+        self.networkDataFetcher = dataFetcher
+        self.localDataFetcher = localDataFetcher
     }
     
     func fetchGames(completion: @escaping (AppGroup?) -> Void) {
         let appsUrlString = "https://rss.applemarketingtools.com/api/v2/us/apps/top-free/10/apps.json"
-        dataFetcher.fetch(urlString: appsUrlString, completion: completion)
+        networkDataFetcher.fetch(urlString: appsUrlString, completion: completion)
     }
     
     func fetchCountry(completion: @escaping ([Country]?) -> Void) {
         let countryUrlString = "https://raw.githubusercontent.com/Softex-Group/task-mobile/master/test.json"
-        dataFetcher.fetch(urlString: countryUrlString, completion: completion)
+        networkDataFetcher.fetch(urlString: countryUrlString, completion: completion)
+    }
+    
+    func fetchLocalCountry(completion: @escaping ([Country]?) -> Void) {
+        let localUrlString = "usersAPI.txt"
+        localDataFetcher.fetch(urlString: localUrlString, completion: completion)
     }
 }

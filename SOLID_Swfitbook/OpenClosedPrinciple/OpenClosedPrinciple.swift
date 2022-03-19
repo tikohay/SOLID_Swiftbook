@@ -36,6 +36,10 @@ class OpenClosedPrinciple: UIViewController {
         dataFetcherService.fetchGames { game in
             print(game?.feed.results.first?.name)
         }
+        
+        dataFetcherService.fetchLocalCountry { countries in
+            print(countries)
+        }
     }
     
     func changeName() {

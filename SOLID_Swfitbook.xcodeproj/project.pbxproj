@@ -22,6 +22,7 @@
 		E8A4565327E4D76700139A7F /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4565227E4D76700139A7F /* NetworkDataFetcher.swift */; };
 		E8A4565727E4FA1C00139A7F /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4565627E4FA1C00139A7F /* AppGroup.swift */; };
 		E8A4565927E5072200139A7F /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4565827E5072200139A7F /* DataFetcherService.swift */; };
+		E8FBF42C27E6272E00D96A22 /* LocalDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FBF42B27E6272E00D96A22 /* LocalDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E8A4565227E4D76700139A7F /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		E8A4565627E4FA1C00139A7F /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		E8A4565827E5072200139A7F /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		E8FBF42B27E6272E00D96A22 /* LocalDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				E8A4564C27E4D67300139A7F /* NetworkService2.swift */,
 				E8A4564E27E4D69E00139A7F /* DataStore2.swift */,
 				E8A4565227E4D76700139A7F /* NetworkDataFetcher.swift */,
+				E8FBF42B27E6272E00D96A22 /* LocalDataFetcher.swift */,
 				E8A4565827E5072200139A7F /* DataFetcherService.swift */,
 			);
 			path = Services;
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A4565727E4FA1C00139A7F /* AppGroup.swift in Sources */,
+				E8FBF42C27E6272E00D96A22 /* LocalDataFetcher.swift in Sources */,
 				E8A4563527E4BF7000139A7F /* SingleResponsibilityPrinciple.swift in Sources */,
 				E8A4564F27E4D69E00139A7F /* DataStore2.swift in Sources */,
 				E8A4565127E4D72D00139A7F /* CountryModel.swift in Sources */,
