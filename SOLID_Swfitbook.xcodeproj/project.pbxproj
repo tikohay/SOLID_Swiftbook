@@ -23,6 +23,7 @@
 		E8A4565727E4FA1C00139A7F /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4565627E4FA1C00139A7F /* AppGroup.swift */; };
 		E8A4565927E5072200139A7F /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4565827E5072200139A7F /* DataFetcherService.swift */; };
 		E8FBF42C27E6272E00D96A22 /* LocalDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FBF42B27E6272E00D96A22 /* LocalDataFetcher.swift */; };
+		E8FBF42F27E633A600D96A22 /* InterfaceSegregationPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FBF42E27E633A600D96A22 /* InterfaceSegregationPrinciple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E8A4565627E4FA1C00139A7F /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		E8A4565827E5072200139A7F /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
 		E8FBF42B27E6272E00D96A22 /* LocalDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataFetcher.swift; sourceTree = "<group>"; };
+		E8FBF42E27E633A600D96A22 /* InterfaceSegregationPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceSegregationPrinciple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				E8A4563027E4BF7000139A7F /* AppDelegate.swift */,
 				E8A4563227E4BF7000139A7F /* SceneDelegate.swift */,
+				E8FBF42D27E6339100D96A22 /* InterfaceSegregationPrinciple */,
 				E8A4564927E4D5EB00139A7F /* OpenClosedPrinciple */,
 				E8A4564427E4C14500139A7F /* SingleResponsibilityPrinciple */,
 				E8A4563627E4BF7000139A7F /* Main.storyboard */,
@@ -127,6 +130,14 @@
 				E8A4565627E4FA1C00139A7F /* AppGroup.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E8FBF42D27E6339100D96A22 /* InterfaceSegregationPrinciple */ = {
+			isa = PBXGroup;
+			children = (
+				E8FBF42E27E633A600D96A22 /* InterfaceSegregationPrinciple.swift */,
+			);
+			path = InterfaceSegregationPrinciple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 				E8A4563527E4BF7000139A7F /* SingleResponsibilityPrinciple.swift in Sources */,
 				E8A4564F27E4D69E00139A7F /* DataStore2.swift in Sources */,
 				E8A4565127E4D72D00139A7F /* CountryModel.swift in Sources */,
+				E8FBF42F27E633A600D96A22 /* InterfaceSegregationPrinciple.swift in Sources */,
 				E8A4563127E4BF7000139A7F /* AppDelegate.swift in Sources */,
 				E8A4565327E4D76700139A7F /* NetworkDataFetcher.swift in Sources */,
 				E8A4564627E4CC2400139A7F /* NetworkService.swift in Sources */,
